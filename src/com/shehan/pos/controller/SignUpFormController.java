@@ -37,7 +37,6 @@ public class SignUpFormController {
             e.printStackTrace();
             new Alert(Alert.AlertType.ERROR,e.getMessage()).show();
         }
-
     }
 
     public void btnAlRedyhaveAnAccountOnAction(ActionEvent actionEvent) throws IOException {

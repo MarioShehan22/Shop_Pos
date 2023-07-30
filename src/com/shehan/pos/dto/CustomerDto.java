@@ -18,14 +18,17 @@ public class CustomerDto {
     }
 
     public String getEmail() {
+
         return email;
     }
 
     public void setEmail(String email) {
+
         this.email = email;
     }
 
     public String getName() {
+
         return name;
     }
 
@@ -33,19 +36,23 @@ public class CustomerDto {
         this.name = name;
     }
 
-    public String getContact() {
+    public String getContact()
+    {
         return contact;
     }
 
     public void setContact(String contact) {
+
         this.contact = contact;
     }
 
     public Double getSalary() {
+
         return salary;
     }
 
     public void setSalary(Double salary) {
+
         this.salary = salary;
     }
 }
