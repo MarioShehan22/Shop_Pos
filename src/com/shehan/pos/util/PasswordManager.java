@@ -9,4 +9,5 @@ public class PasswordManager {
     public static boolean checkPassword(String plaintext, String hash){
         return BCrypt.checkpw(plaintext,hash);
     }
+
 }

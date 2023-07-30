@@ -17,7 +17,6 @@ import java.sql.*;
 
 public class LoginFormController {
 
-
     public JFXTextField txtemail;
     public JFXPasswordField txtpassword;
     public AnchorPane context;
