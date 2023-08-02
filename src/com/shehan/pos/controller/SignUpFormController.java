@@ -17,7 +17,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.sql.SQLException;
 
-class SignupFormController {
+public class SignUpFormController {
     public AnchorPane context;
     public JFXTextField txtEmail;
     public JFXPasswordField textPassword;

@@ -25,12 +25,7 @@ public class LoginFormController {
 
     UserBo bo= BoFactory.getInstance().getBo(BoType.USER);
 
-    public void btnCreateAnAccountOnAction(ActionEvent actionEvent) throws IOException {
-        setUi("SignupForm");
-    }
-
     public void btnSignInOnAction(ActionEvent actionEvent) {
-
         try {
             UserDto ud= bo.findUser(txtEmail.getText());
             if (ud!=null) {
@@ -49,14 +44,14 @@ public class LoginFormController {
             e.printStackTrace();
             new Alert(Alert.AlertType.ERROR, e.getMessage()).show();
         }
-
     }
 
+    public void btnCreateAnAccountOnAction(ActionEvent actionEvent) throws IOException {
+        setUi("SignUpForm");
+    }
     private void setUi(String url) throws IOException {
-        Stage stage = (Stage) context.getScene().getWindow();
-        stage.setScene(
-                new Scene(FXMLLoader.load(getClass().getResource("../view/" + url + ".fxml")))
-        );
+        Stage stage = (Stage)context.getScene().getWindow();
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("../view/"+url+".fxml"))));
         stage.centerOnScreen();
     }
 
